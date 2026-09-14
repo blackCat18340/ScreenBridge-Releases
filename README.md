@@ -29,11 +29,24 @@ uninstaller. Setup does not require users to install a separate .NET runtime.
 
 ### Virtual Displays
 
-- Up to four independent Windows virtual displays
-- USB or authenticated local Wi-Fi transport
-- Native Android resolution with landscape and portrait modes
-- H.264 and HEVC hardware encoding
-- High-refresh-rate streaming and direct Android touch input
+Create up to four independent Windows displays and assign each one to a
+different Android device. Every display has its own resolution, refresh rate,
+codec, bitrate, transport, orientation, and touch configuration.
+
+- Native device resolution and landscape or portrait display modes
+- <code>50</code>, <code>60</code>, <code>90</code>, <code>120</code>,
+  <code>144</code>, and <code>165 FPS</code> options, capped by the receiver's
+  native refresh rate
+- DXGI Desktop Duplication and D3D11 processing with H.264 or HEVC hardware
+  encoding
+- Android MediaCodec hardware decoding with aspect-preserving presentation
+- Direct touch input with Windows cursor feedback
+- Independent USB or local Wi-Fi sessions
+
+ScreenBridge has been tested on NVIDIA GeForce RTX 3070 Ti, NVIDIA GeForce
+RTX 5080, and Intel Iris Xe Graphics. Achievable resolution and refresh rate
+still depend on the hardware encoder, Android decoder, power mode, and link
+quality.
 
 **Virtual display demo**
 
@@ -41,22 +54,55 @@ https://github.com/user-attachments/assets/a8c16f68-1d61-40cc-97c3-aa55971791f8
 
 ### Touchpad
 
-- Pointer movement, clicking, dragging, scrolling, and pinch zoom
+Use an Android touchscreen as a dedicated Windows touchpad without creating a
+virtual display.
+
+- Pointer acceleration, tap-to-click, tap-and-drag, and optional three-finger
+  drag
+- High-resolution two-finger scrolling, pinch zoom, and haptic feedback
 - Browser back and forward navigation
 - Three- and four-finger Windows gestures
-- Palm rejection, haptic feedback, and optional three-finger drag
-- Virtual HID input for elevated Windows surfaces and secure prompts
+- Palm rejection, physical-size calibration, and adaptive pointer filtering
+- Virtual HID input on elevated Windows surfaces and secure confirmation
+  prompts
 
 ### Media Panels
 
-- Multiple independent USB media panels
+Turn one or more USB-connected Android devices into persistent media panels
+for a PC case, desk, or other fixed installation. Media panels do not create a
+Windows display or run the desktop video encoder.
+
+- Multiple saved panels with persistent device assignments
 - Managed image, animation, and video library
-- Layered layout editor with crop and fit controls
-- Persistent device assignments, automatic startup, and USB reconnect
+- Layered layouts with position, size, rotation, opacity, crop, and fit controls
+- Automatic startup and USB reconnect
+- Independent content and layout for every panel
 
 **Media panel demo**
 
 https://github.com/user-attachments/assets/e3a7b35f-6b84-472d-9483-05761e4b38f4
+
+### Connections and Android Receiver Management
+
+- Direct USB transport and low-latency local Wi-Fi transport
+- Six-digit first-connection pairing with separate remember choices on
+  Windows and Android
+- Authenticated Wi-Fi pairing with encrypted control and video traffic
+- Receiver discovery and user-confirmed installation over USB
+- Local QR download for installing the Android receiver without a USB cable
+- Receiver version discovery and authenticated in-app updates over Wi-Fi
+- Persistent display, touchpad, media panel, and device assignments
+
+### Performance and Diagnostics
+
+- Event-driven capture and a bounded shared GPU texture pool that avoid
+  duplicate idle frames and stale-frame backlogs
+- Paced Wi-Fi video transport with packet reordering and adaptive Reed-Solomon
+  packet-loss recovery
+- End-to-end Wi-Fi metrics that separate transport, MediaCodec decode, and
+  Android presentation latency
+- Structured logs with severity, component, session, transport, time, and text
+  filters in the Windows settings dialog
 
 ## Requirements
 
