@@ -8,43 +8,55 @@
 <h1 align="center">ScreenBridge Downloads</h1>
 
 <p align="center">
-  <strong>Turn an Android device into a Windows external display over USB or local Wi-Fi.</strong>
+  <strong>Turn an Android device into a Windows display, touchpad, or media panel.</strong>
 </p>
 
-ScreenBridge creates independent Windows virtual displays, streams them to
-Android over USB or the local network, and returns Android touch input to
-Windows.
+<p align="center">
+  <strong>English</strong> |
+  <a href="README.zh-TW.md">繁體中文</a>
+</p>
 
 ## Download
 
-Open the [Releases](../../releases) page and download the newest
-`ScreenBridge-<version>-win-x64-setup.exe`.
+Download the latest <code>ScreenBridge-&lt;version&gt;-win-x64-setup.exe</code>
+from [ScreenBridge Releases](https://github.com/blackCat18340/ScreenBridge-Releases/releases/latest).
 
-The self-contained installer adds the Windows application, ScreenBridge IddCx
-display driver, virtual HID input driver, Android receiver, USB transport
-tools, uninstaller, Start menu shortcut, and optional desktop shortcut.
+The self-contained installer includes the Windows application, ScreenBridge
+virtual display and input drivers, Android receiver, USB transport tools, and
+uninstaller. Setup does not require users to install a separate .NET runtime.
 
-## Version 0.6.0
+## Features
 
-- Adds a choice between a virtual display and a dedicated Android touchpad
-  when creating a ScreenBridge accessory.
-- Adds pointer acceleration, tap-to-click, tap-and-drag, auxiliary-finger drag
-  extension, two-finger scrolling with inertia, pinch zoom, palm rejection,
-  and haptic confirmation.
-- Adds direction-latched two-finger browser back and forward navigation,
-  three- and four-finger Windows gestures, and optional three-finger drag.
-- Routes touchpad pointer movement and buttons through a virtual HID device so
-  they remain available on elevated Windows surfaces and secure confirmation
-  prompts.
-- Carries ordered physical touch contacts over paired USB or encrypted local
-  Wi-Fi sessions with exclusive per-device ownership.
-- Adds persistent touchpad preferences and clean session release when the
-  Android receiver or Windows application closes.
-- Updates the Windows interface, settings flow, tray lifecycle, and
-  single-instance behavior for display and touchpad sessions.
+### Virtual Displays
 
-The selected FPS is a maximum update rate. A static desktop can report a lower
-frame rate because no duplicate frames are generated.
+- Up to four independent Windows virtual displays
+- USB or authenticated local Wi-Fi transport
+- Native Android resolution with landscape and portrait modes
+- H.264 and HEVC hardware encoding
+- High-refresh-rate streaming and direct Android touch input
+
+**Virtual display demo**
+
+https://github.com/user-attachments/assets/a8c16f68-1d61-40cc-97c3-aa55971791f8
+
+### Touchpad
+
+- Pointer movement, clicking, dragging, scrolling, and pinch zoom
+- Browser back and forward navigation
+- Three- and four-finger Windows gestures
+- Palm rejection, haptic feedback, and optional three-finger drag
+- Virtual HID input for elevated Windows surfaces and secure prompts
+
+### Media Panels
+
+- Multiple independent USB media panels
+- Managed image, animation, and video library
+- Layered layout editor with crop and fit controls
+- Persistent device assignments, automatic startup, and USB reconnect
+
+**Media panel demo**
+
+https://github.com/user-attachments/assets/e3a7b35f-6b84-472d-9483-05761e4b38f4
 
 ## Requirements
 
@@ -52,16 +64,16 @@ frame rate because no duplicate frames are generated.
 - Android 11 or later
 - A GPU with hardware H.264 encoding support; HEVC requires compatible
   hardware on both Windows and Android
-- A data-capable USB connection with Android USB debugging enabled, or both
-  endpoints on the same local IPv4 network
+- A data-capable USB connection with Android USB debugging, or both endpoints
+  connected to the same local IPv4 network
 - Administrator access for driver installation
 
-A low-contention 5 GHz or 6 GHz connection is recommended.
+For Wi-Fi, use a low-contention 5 GHz or 6 GHz local connection.
 
-The current `0.x` line is an alpha release. The setup executable is not yet
-Authenticode-signed, the virtual display and input drivers use a development
-test certificate, and the bundled Android receiver uses the stable
-ScreenBridge release signature.
+> [!NOTE]
+> The Windows setup executable is not Authenticode-signed. ScreenBridge
+> virtual display and input drivers use a development test certificate, while
+> the bundled Android receiver uses the stable ScreenBridge release signature.
 
-Source code and technical documentation are available in the
-[ScreenBridge repository](https://github.com/danielChinPai/ScreenBridge).
+Source code, build instructions, and architecture documentation are available
+in the [ScreenBridge repository](https://github.com/blackCat18340/ScreenBridge).
