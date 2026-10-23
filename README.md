@@ -1,125 +1,131 @@
 <p align="center">
-  <img
-    src="assets/screenbridge-windows.png"
-    alt="ScreenBridge"
-    width="180">
+  <img src="assets/screenbridge-windows.png" alt="ScreenBridge" width="160">
 </p>
 
-<h1 align="center">ScreenBridge Downloads</h1>
+<h1 align="center">ScreenBridge</h1>
 
 <p align="center">
-  <strong>Turn an Android device into a Windows display, touchpad, or media panel.</strong>
+  <strong>Turn your Android device into a second screen, touchpad, media panel, or control deck for Windows.</strong>
 </p>
 
 <p align="center">
-  <strong>English</strong> |
-  <a href="README.zh-TW.md">繁體中文</a>
+  <strong>English</strong> | <a href="README.zh-TW.md">繁體中文</a>
 </p>
 
-## Download
+<p align="center">
+  <a href="https://github.com/blackCat18340/ScreenBridge-Releases/releases/download/v0.8.1/ScreenBridge-0.8.1-win-x64-setup.exe">Download for Windows · 0.8.1</a>
+</p>
 
-Download the latest <code>ScreenBridge-&lt;version&gt;-win-x64-setup.exe</code>
-from [ScreenBridge Releases](https://github.com/blackCat18340/ScreenBridge-Releases/releases/latest).
+ScreenBridge gives your Android phone or tablet another job at your desk.
+Extend your Windows desktop, control the pointer with touch, display media
+and hardware readings, or build a control deck for the apps you use every day.
+The Deck also works directly on Windows.
 
-The self-contained installer includes the Windows application, ScreenBridge
-virtual display and input drivers, Android receiver, USB transport tools, and
-uninstaller. Setup does not require users to install a separate .NET runtime.
+Current release: **0.8.1**. [What's new](https://github.com/blackCat18340/ScreenBridge-Releases/releases/tag/v0.8.1)
+· [All releases](https://github.com/blackCat18340/ScreenBridge-Releases/releases)
 
 ## Features
 
-### Virtual Displays
+### Second screen
 
-Create up to four independent Windows displays and assign each one to a
-different Android device. Every display has its own resolution, refresh rate,
-codec, bitrate, transport, orientation, and touch configuration.
+Create up to four independent Windows displays, each assigned to an Android
+device. Set the resolution, orientation, refresh rate, and image quality for
+each screen. Connect over USB or local Wi-Fi and use the touchscreen to
+interact with Windows.
 
-- Native device resolution and landscape or portrait display modes
-- <code>50</code>, <code>60</code>, <code>90</code>, <code>120</code>,
-  <code>144</code>, and <code>165 FPS</code> options, capped by the receiver's
-  native refresh rate
-- DXGI Desktop Duplication and D3D11 processing with H.264 or HEVC hardware
-  encoding
-- Android MediaCodec hardware decoding with aspect-preserving presentation
-- Direct touch input with Windows cursor feedback
-- Independent USB or local Wi-Fi sessions
-
-ScreenBridge has been tested on NVIDIA GeForce RTX 3070 Ti, NVIDIA GeForce
-RTX 5080, and Intel Iris Xe Graphics. Achievable resolution and refresh rate
-still depend on the hardware encoder, Android decoder, power mode, and link
-quality.
+- Native device resolutions, in landscape or portrait
+- 50, 60, 90, 120, 144, and 165 FPS options, limited by the device's refresh rate
+- H.264 and HEVC on supported hardware
 
 **Virtual display demo**
 
-https://github.com/user-attachments/assets/a8c16f68-1d61-40cc-97c3-aa55971791f8
+https://github.com/user-attachments/assets/d35894fd-10f0-4a94-9480-b9b4f3ed1321
 
 ### Touchpad
 
-Use an Android touchscreen as a dedicated Windows touchpad without creating a
-virtual display.
+Use your Android touchscreen as a Windows touchpad, with tap-to-click,
+dragging, two-finger scrolling and zoom, browser navigation, and three- and
+four-finger gestures. Pointer controls also work on elevated Windows screens.
 
-- Pointer acceleration, tap-to-click, tap-and-drag, and optional three-finger
-  drag
-- High-resolution two-finger scrolling, pinch zoom, and haptic feedback
-- Browser back and forward navigation
-- Three- and four-finger Windows gestures
-- Palm rejection, physical-size calibration, and adaptive pointer filtering
-- Virtual HID input on elevated Windows surfaces and secure confirmation
-  prompts
+### Media panels
 
-### Media Panels
-
-Turn one or more USB-connected Android devices into persistent media panels
-for a PC case, desk, or other fixed installation. Media panels do not create a
-Windows display or run the desktop video encoder.
-
-- Multiple saved panels with persistent device assignments
-- Managed image, animation, and video library
-- Layered layouts with position, size, rotation, opacity, crop, and fit controls
-- Automatic startup and USB reconnect
-- Independent content and layout for every panel
+Give a USB-connected Android device a permanent place on your desk or inside
+your PC case. Combine images, animations, and video in layered layouts, and
+add hardware readings for CPU, GPU, memory, storage, and network activity.
+Save multiple panels with their own content and reconnect them automatically.
 
 **Media panel demo**
 
-https://github.com/user-attachments/assets/e3a7b35f-6b84-472d-9483-05761e4b38f4
+https://github.com/user-attachments/assets/100bfb60-0fad-40a2-a161-0e92730b7cb8
 
-### Connections and Android Receiver Management
+### Control deck
 
-- Direct USB transport and low-latency local Wi-Fi transport
-- Six-digit first-connection pairing with separate remember choices on
-  Windows and Android
-- Authenticated Wi-Fi pairing with encrypted control and video traffic
-- Receiver discovery and user-confirmed installation over USB
-- Local QR download for installing the Android receiver without a USB cable
-- Receiver version discovery and authenticated in-app updates over Wi-Fi
-- Persistent display, touchpad, media panel, and device assignments
+Put shortcuts, music, sound effects, lights, and hardware readings within
+reach. Arrange your own keys, pages, icons, and labels, then switch layouts
+automatically when you change Windows apps.
 
-### Performance and Diagnostics
+- Launch apps, type text, run shortcuts, and control OBS scenes or recording.
+- Browse Spotify tracks, control playback, and adjust volume.
+- Play sound effects with your voice through your original microphone.
+- Switch smart lights and adjust brightness, temperature, and colour.
+- Set separate short-press, double-press, and long-press actions for each key.
+- Back up and share layouts with `.sbdeck` files.
 
-- Event-driven capture and a bounded shared GPU texture pool that avoid
-  duplicate idle frames and stale-frame backlogs
-- Paced Wi-Fi video transport with packet reordering and adaptive Reed-Solomon
-  packet-loss recovery
-- End-to-end Wi-Fi metrics that separate transport, MediaCodec decode, and
-  Android presentation latency
-- Structured logs with severity, component, session, transport, time, and text
-  filters in the Windows settings dialog
+Use the Deck on Android over USB or encrypted Wi-Fi, or press
+`Ctrl+Shift+Space` to bring up the always-on-top desktop Deck at your pointer.
+Desktop Key Size adjusts the desktop Deck without changing the phone layout.
+
+**Virtual Deck demo**
+
+https://github.com/user-attachments/assets/66043f70-a838-4114-9e4b-23f26a99b960
+
+## Install and start
+
+1. Download [ScreenBridge-0.8.1-win-x64-setup.exe](https://github.com/blackCat18340/ScreenBridge-Releases/releases/download/v0.8.1/ScreenBridge-0.8.1-win-x64-setup.exe)
+   and run the installer.
+2. Connect Android over USB with USB debugging enabled, or put Windows and
+   Android on the same local network. ScreenBridge can install the receiver
+   over USB; without a cable, open **Settings > Android app > Get app** and
+   scan the QR code.
+3. Keep the Android receiver open. In ScreenBridge, select `+` and choose
+   **Display**, **Touchpad**, **Media Panel**, or **Virtual Deck**.
+4. Select the device and settings, start the session, and confirm the matching
+   pairing code on both devices when connecting for the first time.
+
+The installer includes the Windows app, display and input drivers, microphone
+audio components, Android receiver, and USB tools. A separate .NET runtime
+installation is not required.
+
+### Sound effects in voice apps
+
+Select your physical microphone in Deck settings and keep the same microphone
+selected in your voice app. Add sounds to your Deck keys. Each sound action
+supports 0–200% volume; the computer-wide soundboard master in Deck settings
+supports 0–100%. Local playback follows the Windows default output.
+
+### Connect Spotify
+
+Register an app in the [Spotify Developer Dashboard](https://developer.spotify.com/dashboard/create)
+using your Spotify Premium account. Set its Redirect URI to
+`http://127.0.0.1:28187/spotify/`, then enter its Client ID in ScreenBridge's
+**Connect Spotify** dialog and authorise your account.
 
 ## Requirements
 
 - Windows 11 x64
-- Android 11 or later
-- A GPU with hardware H.264 encoding support; HEVC requires compatible
-  hardware on both Windows and Android
-- A data-capable USB connection with Android USB debugging, or both endpoints
-  connected to the same local IPv4 network
-- Administrator access for driver installation
+- Android 11 or later for phone and tablet modes
+- Administrator access for installation
+- A data-capable USB cable with USB debugging, or a shared local IPv4 network
+- For virtual displays: a GPU with H.264 hardware encoding; HEVC also requires
+  decoding support on Android
 
-For Wi-Fi, use a low-contention 5 GHz or 6 GHz local connection.
+For Wi-Fi streaming, use a local 5 GHz or 6 GHz connection with low interference.
+Media panels use USB.
 
 > [!NOTE]
-> The Windows setup executable is not Authenticode-signed. ScreenBridge
-> virtual display and input drivers use a development test certificate, while
-> the bundled Android receiver uses the stable ScreenBridge release signature.
+> The Windows installer is not Authenticode-signed. Display and input drivers
+> use a development test certificate; the Android receiver uses the ScreenBridge
+> release signature.
 
-Source code, build instructions, and architecture documentation are available
-in the [ScreenBridge repository](https://github.com/blackCat18340/ScreenBridge).
+Installer hashes and the packaged file manifest are available with the
+[v0.8.1 release attachments](https://github.com/blackCat18340/ScreenBridge-Releases/releases/tag/v0.8.1).
