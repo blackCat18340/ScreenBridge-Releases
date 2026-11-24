@@ -13,7 +13,7 @@
 </p>
 
 <p align="center">
-  <a href="https://github.com/blackCat18340/ScreenBridge-Releases/releases/download/v0.8.1/ScreenBridge-0.8.1-win-x64-setup.exe">Download for Windows · 0.8.1</a>
+  <a href="https://github.com/blackCat18340/ScreenBridge-Releases/releases/download/v0.9.0/ScreenBridge-0.9.0-win-x64-setup.exe">Download for Windows · 0.9.0</a>
 </p>
 
 ScreenBridge gives your Android phone or tablet another job at your desk.
@@ -21,7 +21,7 @@ Extend your Windows desktop, control the pointer with touch, display media
 and hardware readings, or build a control deck for the apps you use every day.
 The Deck also works directly on Windows.
 
-Current release: **0.8.1**. [What's new](https://github.com/blackCat18340/ScreenBridge-Releases/releases/tag/v0.8.1)
+Current release: **0.9.0**. [What's new](https://github.com/blackCat18340/ScreenBridge-Releases/releases/tag/v0.9.0)
 · [All releases](https://github.com/blackCat18340/ScreenBridge-Releases/releases)
 
 ## Features
@@ -81,7 +81,7 @@ https://github.com/user-attachments/assets/66043f70-a838-4114-9e4b-23f26a99b960
 
 ## Install and start
 
-1. Download [ScreenBridge-0.8.1-win-x64-setup.exe](https://github.com/blackCat18340/ScreenBridge-Releases/releases/download/v0.8.1/ScreenBridge-0.8.1-win-x64-setup.exe)
+1. Download [ScreenBridge-0.9.0-win-x64-setup.exe](https://github.com/blackCat18340/ScreenBridge-Releases/releases/download/v0.9.0/ScreenBridge-0.9.0-win-x64-setup.exe)
    and run the installer.
 2. Connect Android over USB with USB debugging enabled, or put Windows and
    Android on the same local network. ScreenBridge can install the receiver
@@ -128,4 +128,4 @@ Media panels use USB.
 > release signature.
 
 Installer hashes and the packaged file manifest are available with the
-[v0.8.1 release attachments](https://github.com/blackCat18340/ScreenBridge-Releases/releases/tag/v0.8.1).
+[v0.9.0 release attachments](https://github.com/blackCat18340/ScreenBridge-Releases/releases/tag/v0.9.0).

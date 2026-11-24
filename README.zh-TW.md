@@ -13,14 +13,14 @@
 </p>
 
 <p align="center">
-  <a href="https://github.com/blackCat18340/ScreenBridge-Releases/releases/download/v0.8.1/ScreenBridge-0.8.1-win-x64-setup.exe">下載 Windows 版 · 0.8.1</a>
+  <a href="https://github.com/blackCat18340/ScreenBridge-Releases/releases/download/v0.9.0/ScreenBridge-0.9.0-win-x64-setup.exe">下載 Windows 版 · 0.9.0</a>
 </p>
 
 讓 Android 手機或平板在桌上多一種用途。ScreenBridge 可延伸 Windows 桌面、
 透過觸控操作游標、展示媒體與硬體資訊，或建立日常應用程式的控制台。
 控制台也能直接在 Windows 桌面使用。
 
-目前版本：**0.8.1**。[更新內容](https://github.com/blackCat18340/ScreenBridge-Releases/releases/tag/v0.8.1)
+目前版本：**0.9.0**。[更新內容](https://github.com/blackCat18340/ScreenBridge-Releases/releases/tag/v0.9.0)
 · [所有版本](https://github.com/blackCat18340/ScreenBridge-Releases/releases)
 
 ## 功能
@@ -76,7 +76,7 @@ https://github.com/user-attachments/assets/66043f70-a838-4114-9e4b-23f26a99b960
 
 ## 安裝與開始使用
 
-1. 下載並執行 [ScreenBridge-0.8.1-win-x64-setup.exe](https://github.com/blackCat18340/ScreenBridge-Releases/releases/download/v0.8.1/ScreenBridge-0.8.1-win-x64-setup.exe)。
+1. 下載並執行 [ScreenBridge-0.9.0-win-x64-setup.exe](https://github.com/blackCat18340/ScreenBridge-Releases/releases/download/v0.9.0/ScreenBridge-0.9.0-win-x64-setup.exe)。
 2. 使用已啟用 USB 偵錯的 Android 裝置連接電腦，或讓 Windows 與 Android 位於同一
    區域網路。ScreenBridge 可透過 USB 安裝接收端；沒有傳輸線時，開啟
    **設定 > Android 應用程式 > 取得應用程式** 並掃描 QR Code。
@@ -114,4 +114,4 @@ Wi-Fi 串流建議使用干擾較少的 5 GHz 或 6 GHz 區域連線。媒體面
 > Android 接收端使用 ScreenBridge 發行簽章。
 
 安裝檔雜湊收據與套件檔案清單位於
-[v0.8.1 發布附件](https://github.com/blackCat18340/ScreenBridge-Releases/releases/tag/v0.8.1)。
+[v0.9.0 發布附件](https://github.com/blackCat18340/ScreenBridge-Releases/releases/tag/v0.9.0)。
